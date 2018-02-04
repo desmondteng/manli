@@ -1,0 +1,65 @@
+body > .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding-left: 3em;
+  line-height: 3em;
+  background: #000;
+
+  li {
+    display: inline-block;
+    margin: 0 1em;
+    padding: 0 1em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.fullpage {
+  > .section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url(bg/1.jpg);
+    }
+
+    &:nth-child(2) .slide {
+      &:nth-child(1) {
+        background-image: url(bg/2-1.jpg);
+      }
+      &:nth-child(2) {
+        background-image: url(bg/2-2.jpg);
+      }
+      &:nth-child(3) {
+        background-image: url(bg/2-3.jpg);
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(bg/3.jpg);
+    }
+
+    &:nth-child(4) .slide {
+      &:nth-child(1) {
+        background-image: url(bg/4-1.jpg);
+      }
+      &:nth-child(2) {
+        background-image: url(bg/4-2.jpg);
+      }
+      &:nth-child(3) {
+        background-image: url(bg/4-3.jpg);
+      }
+    }
+
+    &:nth-child(5) {
+      background-image: url(bg/5.jpg);
+    }
+  }
+}
