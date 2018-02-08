@@ -28,18 +28,6 @@ body > .menu {
     background-repeat: no-repeat;
     background-size: cover;
 
-    &:nth-child(2) .slide {
-      &:nth-child(1) {
-        background-image: url(images/2-1.jpg);
-      }
-      &:nth-child(2) {
-        background-image: url(images/2-2.jpg);
-      }
-      &:nth-child(3) {
-        background-image: url(images/2-3.jpg);
-      }
-    }
-
     &:nth-child(3) {
       background-image: url(images/3.jpg);
     }
@@ -94,6 +82,74 @@ body > .menu {
 
     p {
       margin: 0;
+    }
+  }
+}
+
+.about.section {
+  position: relative;
+
+  .slide {
+    position: relative;
+
+    &:nth-child(1) {
+      background-image: url(images/2-1.jpg);
+    }
+    &:nth-child(2) {
+      background-image: url(images/2-2.jpg);
+    }
+    &:nth-child(3) {
+      background-image: url(images/2-3.jpg);
+    }
+
+    .wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70em;
+      height: 32em;
+      overflow: hidden;
+
+      @mixin panel {
+        position: absolute;
+        width: 50em;
+        height: 22em;
+        box-sizing: border-box;
+        background-color: #ffffff33;
+      }
+
+      .content {
+        @include panel;
+        top: 0;
+        left: 0;
+        padding: 6em 1em;
+
+        h3 {
+          margin: 0;
+          padding-bottom: .5em;
+          font-size: 32px;
+          border-bottom: solid 5px #fff;
+
+          em {
+            font-style: normal;
+            color: #f00;
+          }
+        }
+
+        p {
+          margin: .8em 0 0;
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+
+      &::after {
+        @include panel;
+        right: 0;
+        bottom: 0;
+        content: '';
+      }
     }
   }
 }
