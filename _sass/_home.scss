@@ -1,24 +1,29 @@
-body > .menu {
+.menu {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
   display: flex;
-  width: 100%;
   box-sizing: border-box;
-  text-align: center;
-  margin: 1em auto;
-  padding: 0 15%;
-  line-height: 3em;
-  background: #000;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  line-height: 4rem;
+  list-style: none;
+  z-index: 1;
+  letter-spacing: 0.3rem;
 
   li {
     flex: 1;
+    text-align: center;
   }
 
   a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
+
+    @at-root .fp-viewing-about-2 &, .fp-viewing-service-2 & {
+      color: #f9f9f9;
+    }
   }
 }
 
@@ -27,61 +32,39 @@ body > .menu {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
 
-    &:nth-child(3) {
-      background-image: url(images/3.jpg);
+%vertical-middle {
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: " ";
+      flex: 1;
     }
 
-    &:nth-child(4) .slide {
-      &:nth-child(1) {
-        background-image: url(images/4-1.jpg);
-      }
-      &:nth-child(2) {
-        background-image: url(images/4-2.jpg);
-      }
-      &:nth-child(3) {
-        background-image: url(images/4-3.jpg);
-      }
-    }
-
-    &:nth-child(5) {
-      background-image: url(images/5.jpg);
+    &::after {
+      content: " ";
+      flex: 1;
     }
   }
 }
 
 .home.section {
-  position: relative;
-  background-image: url(images/1.jpg);
+  @extend %vertical-middle;
 
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 5em;
-    transform: translateY(-50%);
-    width: 240px;
+  .content {
+    height: 100%;
+    margin: 0 2rem;
+    background-image: url(images/dot.png);
+    background-repeat: repeat-x;
+    background-size: 16px;
+    background-position: center calc(100% - 10px);
 
-    img {
-      display: block;
-      width: 100%;
-
-      &:first-child {
-        margin-bottom: .5em;
-      }
-    }
-  }
-
-  .scripture {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: .5em 3em .5em 1em;
-    line-height: 1.6em;
-    background: #000;
-    color: #fff;
-
-    p {
-      margin: 0;
+    .manli-home {
+      margin: -7rem 8rem 0;
     }
   }
 }
@@ -93,63 +76,33 @@ body > .menu {
     position: relative;
 
     &:nth-child(1) {
-      background-image: url(images/2-1.jpg);
+      background: #f9f9f9;
+      color: #000;
     }
+
     &:nth-child(2) {
-      background-image: url(images/2-2.jpg);
+      background: url(images/tree.png) no-repeat 90% center;
+      background-size: 800px;
     }
+
     &:nth-child(3) {
-      background-image: url(images/2-3.jpg);
+      background: #171615;
+      color: #fff;
     }
+  }
+}
 
-    .wrap {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 70em;
-      height: 32em;
-      overflow: hidden;
-
-      @mixin panel {
-        position: absolute;
-        width: 50em;
-        height: 22em;
-        box-sizing: border-box;
-        background-color: #ffffff33;
-      }
-
-      .content {
-        @include panel;
-        top: 0;
-        left: 0;
-        padding: 6em 1em;
-
-        h3 {
-          margin: 0;
-          padding-bottom: .5em;
-          font-size: 32px;
-          border-bottom: solid 5px #fff;
-
-          em {
-            font-style: normal;
-            color: #f00;
-          }
-        }
-
-        p {
-          margin: .8em 0 0;
-          font-size: 24px;
-          color: #fff;
-        }
-      }
-
-      &::after {
-        @include panel;
-        right: 0;
-        bottom: 0;
-        content: '';
-      }
+.service.section {
+  .slide {
+    &:nth-child(3) {
+      background: #171615;
+      color: #fff;
     }
+  }
+}
+
+.work.section {
+  .content {
+    height: 100%;
   }
 }

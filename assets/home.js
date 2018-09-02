@@ -1,7 +1,7 @@
 $(document).ready(() => {
 	$(".fullpage").fullpage({
     anchors: [
-      "home", "about", "service", "showcase", "contact"
+      "home", "about", "work", "service", "contact"
     ],
     menu: ".menu"
   });

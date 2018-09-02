@@ -1,0 +1,46 @@
+.manli-about-0 {
+  margin: -5rem 10rem 0;
+  text-align: center;
+  color: #606060;
+
+  h3 {
+    margin: 0;
+    border-bottom: solid 1px #ccc;
+    font-size: 3rem;
+  }
+
+  h3 + p {
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+  }
+}
+
+.manli-about-1 {
+  margin: -5rem 8rem 0;
+
+  p:not(:last-child) {
+    font-size: 1.2rem;
+  }
+
+  p:last-child {
+    margin-top: 10rem;
+    font-size: 0.8rem;
+  }
+}
+
+.manli-about-2 {
+  margin: -5rem 10rem 0;
+  text-align: center;
+  color: #f9f9f9;
+
+  h3 {
+    margin: 0;
+    border-bottom: solid 1px #ccc;
+    font-size: 3rem;
+  }
+
+  h3 + p {
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+  }
+}

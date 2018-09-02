@@ -1,0 +1,23 @@
+.manli-home {
+  .logo {
+    width: 400px;
+
+    img {
+      display: block;
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: .5em;
+      }
+    }
+  }
+
+  .scripture {
+    padding: .5em 3em .5em 0;
+    line-height: 1.6em;
+
+    p {
+      margin: 0;
+    }
+  }
+}

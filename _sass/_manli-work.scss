@@ -1,0 +1,60 @@
+.manli-work {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 1rem 1rem;
+    text-align: right;
+  }
+
+  .client {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    img {
+      display: block;
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    &::before {
+      content: " ";
+      flex: 1;
+    }
+
+    &::after {
+      content: " ";
+      flex: 1;
+    }
+  }
+
+  .work-logo {
+    display: flex;
+    border-top: solid 1px #ccc;
+
+    > * {
+      padding: 0.5rem;
+    }
+
+    .logo {
+      width: 240px;
+      border-right: solid 1px #ccc;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .desc {
+      flex: 1;
+      color: #909090;
+
+      h4 {
+        margin: 0.5rem 0;
+        color: #303030;
+      }
+    }
+  }
+}

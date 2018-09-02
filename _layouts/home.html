@@ -12,55 +12,46 @@ layout: page
 
 <ul class="menu">
   <li data-menuanchor="home"><a href="#home">HOME</a></li>
-  <li data-menuanchor="about"><a href="#about">关于幔利</a></li>
-  <li data-menuanchor="service"><a href="#service">服务</a></li>
-  <li data-menuanchor="showcase"><a href="#showcase">案例</a></li>
-  <li data-menuanchor="contact"><a href="#contact">联系</a></li>
+  <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+  <li data-menuanchor="work"><a href="#work">WORK</a></li>
+  <li data-menuanchor="service"><a href="#service">SERVICE</a></li>
+  <li data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
 </ul>
+
 <div class="fullpage">
   <div class="section home">
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="logo">
-      <img src="assets/images/manli-design.png" alt="manli-design">
-    </div>
-    <div class="scripture">
-      <p>GENESIS 13:18</p>
-      <p>So Abram moved his tents and went to live near the great trees of Mamre at Hebron,where he built an altar to the LORD.</p>
-      <p>创 13:18</p>
-      <p>亚伯兰就搬了帐篷，来到希伯仑幔利的橡树那里居住，在那里为耶和华筑了一座坛。</p>
+    <div class="content">
+      {% include manli-home.html %}
     </div>
   </div>
   <div class="section about">
     <div class="slide">
-      <div class="wrap">
-        <div class="content">
-          <h3>品牌的核心<em>竞争</em>力，一定是建立在<em>团队</em>之上</h3>
-          <p>我们相信团队所带来的价值是某一个人无法成就的，我们也始终相信团队的KOL才是真正影响一个团队可以走多远的核心因素</p>
-        </div>
-      </div>
+      {% include manli-about-0.html %}
     </div>
     <div class="slide">
-      <div class="wrap">
-        <div class="content">
-          <h3>品牌的核心<em>竞争</em>力，一定是建立在<em>团队</em>之上</h3>
-          <p>我们相信团队所带来的价值是某一个人无法成就的，我们也始终相信团队的KOL才是真正影响一个团队可以走多远的核心因素</p>
-        </div>
-      </div>
+      {% include manli-about-1.html %}
     </div>
     <div class="slide">
-      <div class="wrap">
-        <div class="content">
-          <h3>品牌的核心<em>竞争</em>力，一定是建立在<em>团队</em>之上</h3>
-          <p>我们相信团队所带来的价值是某一个人无法成就的，我们也始终相信团队的KOL才是真正影响一个团队可以走多远的核心因素</p>
-        </div>
-      </div>
+      {% include manli-about-2.html %}
     </div>
   </div>
-  <div class="section">服务</div>
-  <div class="section">
-    <div class="slide">slide1</div>
-    <div class="slide">slide2</div>
-    <div class="slide">slide3</div>
+  <div class="section work">
+    <div class="content">
+      {% include manli-work.html %}
+    </div>
   </div>
-  <div class="section">联系</div>
+  <div class="section service">
+    <div class="slide">
+      {% include manli-service-0.html %}
+    </div>
+    <div class="slide">
+      {% include manli-service-1.html %}
+    </div>
+    <div class="slide">
+      {% include manli-service-2.html %}
+    </div>
+  </div>
+  <div class="section contact">
+    {% include manli-contact.html %}
+  </div>
 </div>
