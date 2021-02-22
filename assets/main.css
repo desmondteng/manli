@@ -1,0 +1,240 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  line-height: 4rem;
+  list-style: none;
+  z-index: 1;
+  letter-spacing: 0.3rem; }
+  .menu li {
+    flex: 1;
+    text-align: center; }
+  .menu a {
+    color: #000;
+    text-decoration: none; }
+    .fp-viewing-about-2 .menu a, .fp-viewing-service-2 .menu a {
+      color: #f9f9f9; }
+
+.fullpage > .section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.home.section .content {
+  display: flex;
+  flex-direction: column; }
+  .home.section .content::before {
+    content: " ";
+    flex: 1; }
+  .home.section .content::after {
+    content: " ";
+    flex: 1; }
+
+.home.section .content {
+  height: 100%;
+  margin: 0 2rem;
+  background-image: url(images/dot.png);
+  background-repeat: repeat-x;
+  background-size: 16px;
+  background-position: center calc(100% - 10px); }
+  .home.section .content .manli-home {
+    margin: -7rem 8rem 0; }
+
+.about.section {
+  position: relative; }
+  .about.section .slide {
+    position: relative; }
+    .about.section .slide:nth-child(1) {
+      background: #f9f9f9;
+      color: #000; }
+    .about.section .slide:nth-child(2) {
+      background: url(images/tree.png) no-repeat 90% center;
+      background-size: 800px; }
+    .about.section .slide:nth-child(3) {
+      background: #171615;
+      color: #fff; }
+
+.service.section .slide:nth-child(3) {
+  background: #171615;
+  color: #fff; }
+
+.work.section .content {
+  height: 100%; }
+
+.manli-home .logo {
+  width: 400px; }
+  .manli-home .logo img {
+    display: block;
+    width: 100%; }
+    .manli-home .logo img:first-child {
+      margin-bottom: .5em; }
+.manli-home .scripture {
+  padding: .5em 3em .5em 0;
+  line-height: 1.6em; }
+  .manli-home .scripture p {
+    margin: 0; }
+
+.manli-about-0 {
+  margin: -5rem 10rem 0;
+  text-align: center;
+  color: #606060; }
+  .manli-about-0 h3 {
+    margin: 0;
+    border-bottom: solid 1px #ccc;
+    font-size: 3rem; }
+  .manli-about-0 h3 + p {
+    margin: 0.5rem auto;
+    font-size: 1.2rem; }
+
+.manli-about-1 {
+  margin: -5rem 8rem 0; }
+  .manli-about-1 p:not(:last-child) {
+    font-size: 1.2rem; }
+  .manli-about-1 p:last-child {
+    margin-top: 10rem;
+    font-size: 0.8rem; }
+
+.manli-about-2 {
+  margin: -5rem 10rem 0;
+  text-align: center;
+  color: #f9f9f9; }
+  .manli-about-2 h3 {
+    margin: 0;
+    border-bottom: solid 1px #ccc;
+    font-size: 3rem; }
+  .manli-about-2 h3 + p {
+    margin: 0.5rem auto;
+    font-size: 1.2rem; }
+
+.manli-work {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .manli-work h3 {
+    margin: 1rem 1rem;
+    text-align: right; }
+  .manli-work .client {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative; }
+    .manli-work .client img {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+    .manli-work .client::before {
+      content: " ";
+      flex: 1; }
+    .manli-work .client::after {
+      content: " ";
+      flex: 1; }
+  .manli-work .work-logo {
+    display: flex;
+    border-top: solid 1px #ccc; }
+    .manli-work .work-logo > * {
+      padding: 0.5rem; }
+    .manli-work .work-logo .logo {
+      width: 240px;
+      border-right: solid 1px #ccc; }
+      .manli-work .work-logo .logo img {
+        width: 100%; }
+    .manli-work .work-logo .desc {
+      flex: 1;
+      color: #909090; }
+      .manli-work .work-logo .desc h4 {
+        margin: 0.5rem 0;
+        color: #303030; }
+
+.manli-service-0 {
+  text-align: center;
+  font-size: 1.2rem; }
+  .manli-service-0 p:first-child {
+    margin: 5rem auto;
+    font-size: 1.35rem; }
+  .manli-service-0 p:nth-child(4) {
+    margin-top: 5rem; }
+  .manli-service-0 p:nth-child(7) {
+    margin-top: 10rem; }
+
+.manli-service-1 {
+  margin: 0 10rem; }
+  .manli-service-1 ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    list-style: none; }
+    .manli-service-1 ul li {
+      width: 50%;
+      margin-top: 2rem;
+      padding-top: 20rem;
+      text-align: center;
+      background-size: 250px;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .manli-service-1 ul li:nth-child(1) {
+        background-image: url(images/service-1.png); }
+      .manli-service-1 ul li:nth-child(2) {
+        background-image: url(images/service-2.png); }
+      .manli-service-1 ul li:nth-child(3) {
+        background-image: url(images/service-3.png); }
+      .manli-service-1 ul li:nth-child(4) {
+        background-image: url(images/service-4.png); }
+
+.manli-service-2 {
+  text-align: center;
+  font-size: 1.2rem; }
+  .manli-service-2 p:first-child {
+    margin: 5rem auto;
+    font-size: 1.35rem; }
+  .manli-service-2 p:nth-child(4) {
+    margin-top: 5rem; }
+  .manli-service-2 p:nth-child(7) {
+    margin-top: 10rem; }
+
+.manli-contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .manli-contact .address-list {
+    flex: 1;
+    margin-top: 4rem;
+    border-top: solid 2px #f0f0f0;
+    color: #606060;
+    display: flex;
+    flex-direction: column; }
+    .manli-contact .address-list::before {
+      content: " ";
+      flex: 1; }
+    .manli-contact .address-list::after {
+      content: " ";
+      flex: 1; }
+    .manli-contact .address-list ul {
+      display: flex;
+      list-style: none;
+      margin: -5rem 8rem 0;
+      padding: 0; }
+      .manli-contact .address-list ul li {
+        flex: 1; }
+        .manli-contact .address-list ul li:last-child {
+          padding-left: 5rem;
+          border-left: solid 1px #f0f0f0; }
+    .manli-contact .address-list .title, .manli-contact .address-list .tel, .manli-contact .address-list .mail, .manli-contact .address-list .site {
+      margin: 0.8rem 0;
+      font-size: 1.2rem; }
+    .manli-contact .address-list .addr {
+      margin-bottom: 2.4rem;
+      font-size: 0.8rem; }
+  .manli-contact .footer {
+    line-height: 3;
+    text-align: center;
+    border-top: solid 1px #f0f0f0;
+    color: #606060;
+    letter-spacing: 0.2rem; }
